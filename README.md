@@ -31,21 +31,23 @@ Desarrollar una plataforma que permita:
 ---
 
 ## Estructura del proyecto
+
+```bash
 PROYECTO FINAL/
 │
 ├── BaseDatos/
-│ └── schema.sql
+│   └── schema.sql
 │
 ├── Public/
-│ ├── bootstrap/
-│ ├── index.html
-│ ├── login.html
-│ ├── registro.html
-│ ├── navbar.html
-│ └── error-login.html
+│   ├── bootstrap/
+│   ├── index.html
+│   ├── login.html
+│   ├── registro.html
+│   ├── navbar.html
+│   └── error-login.html
 │
 ├── uploads/
-│ └── ultrasonidos/
+│   └── ultrasonidos/
 │
 ├── server.js
 ├── styles.css
@@ -53,7 +55,7 @@ PROYECTO FINAL/
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
-
+```
 ---
 
 ## Gestión de usuarios
@@ -94,10 +96,10 @@ Este proyecto fue desarrollado como parte de una actividad académica, aplicando
 - Ingeniería de software
 ---
 ## Autor
-Judith Soriano
-Ingeniería Biomédica
-Instituto Tecnológico de Tijuana
+ - Judith Soriano
+ - Ingeniería Biomédica
+ - Instituto Tecnológico de Tijuana
 ---
 ## Notas finales
-Este repositorio tiene fines educativos y académicos.
-El sistema no sustituye plataformas clínicas certificadas y no está destinado a uso médico real.
+- Este repositorio tiene fines educativos y académicos.
+- El sistema no sustituye plataformas clínicas certificadas y no está destinado a uso médico real.
