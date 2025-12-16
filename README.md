@@ -21,8 +21,8 @@ Desarrollar una plataforma que permita:
 - **Node.js**
 - **Express.js**
 - **MySQL**
-- **HTML5**
-- **CSS3**
+- **HTML**
+- **CSS**
 - **Bootstrap**
 - **JavaScript**
 - **Nodemon**
