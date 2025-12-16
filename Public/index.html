@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Imágenes Doppler</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-light">
+    <!-- Navbar se cargará dinámicamente -->
+    <div id="navbar"></div>
+
+    <div class="container-fluid py-5">
+        <!-- Mostrar mensaje de bienvenida o redirección -->
+        <div class="text-center mt-5">
+            <h3>Bienvenido al Sistema de Gestión de Estudios Doppler</h3>
+            <p class="lead">Esta es la página de inicio. Para acceder al catálogo de estudios, haz clic en "Gestionar Estudios" en el menú de navegación.</p>
+            <div class="mt-4">
+                <a href="/" class="btn btn-primary btn-lg">Ir al Catálogo de Estudios</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    
+    <!-- Cargar navbar dinámico -->
+    <script>
+        // Cargar navbar dinámico
+        fetch('/navbar')
+            .then(r => {
+                if (r.ok) return r.text();
+                // Si no está autenticado, redirigir a login
+                window.location.href = '/login';
+                throw new Error('No autenticado');
+            })
+            .then(html => {
+                document.getElementById('navbar').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error cargando navbar:', error);
+            });
+    </script>
+</body>
+</html>

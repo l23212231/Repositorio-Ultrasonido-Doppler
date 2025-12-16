@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Inicio de Sesión</title>
+</head>
+
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow-lg" style="width: 100%; max-width: 400px;">
+            <h2 class="card-title text-center mb-4">Iniciar Sesión</h2>
+            
+            <form action="/login" method="POST">
+                
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre de Usuario:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100 mt-3">INICIAR SESION</button>
+            </form>
+
+            <p class="text-center mt-3">
+                ¿No tienes cuenta? <a href="/registro.html">Regístrate aquí</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

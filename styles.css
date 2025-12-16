@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* --- Estilo General --- */
+body {
+    background-color: #f7f9fc !important; /* Fondo muy claro */
+}
+
+/* --- Barra de Búsqueda Principal --- */
+.search-bar-large {
+    border-radius: 50px; /* Bordes redondeados para la barra */
+    overflow: hidden; /* Asegura que el input y el botón queden dentro del borde */
+}
+
+.search-bar-large .form-control-lg {
+    height: 60px; /* Altura del input */
+    font-size: 1.25rem;
+    padding-left: 2rem;
+}
+
+.search-btn {
+    background-color: #ffc107; /* Color amarillo */
+    border-color: #ffc107;
+    color: white;
+    width: 60px; /* Ancho del botón */
+    height: 60px;
+    border-top-right-radius: 50px !important; 
+    border-bottom-right-radius: 50px !important;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+/* --- Pastillas de Categoría --- */
+.category-pill {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    border: 1px solid #d4e0ea; /* Borde sutil */
+    color: #3498db !important; /* Texto azul de primary */
+    background-color: #e9f2fa !important; /* Fondo azul muy claro */
+}
+
+.category-pill .badge {
+    background-color: #95a5a6 !important; /* Contador gris */
+    color: white;
+    margin-left: 5px;
+}
+
+/* --- Barra de Filtros Lateral --- */
+#filter-sidebar {
+    position: sticky; /* Mantener el sidebar visible al hacer scroll */
+    top: 20px;
+    min-height: 400px;
+    border-radius: 0.75rem;
+    border: 1px solid #e9f2fa;
+}
+
+.filter-group h6 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.filter-clear {
+    font-size: 0.7rem;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    float: right;
+    margin-top: 3px;
+}
+
+.form-check-label {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* --- Estilo de las Tarjetas de Imagen --- */
+.image-card {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #f0f0f0;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.image-card img {
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover;
+}

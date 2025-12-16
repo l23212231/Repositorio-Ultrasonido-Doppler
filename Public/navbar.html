@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Inicio</a>
+    <div id="navbarContent">
+      <!-- El contenido se cargará dinámicamente -->
+    </div>
+  </div>
+</nav>
+
+<script>
+    // Cargar navbar dinámico
+    fetch('/navbar')
+        .then(r => {
+            if (r.ok) return r.text();
+            throw new Error('Error cargando navbar');
+        })
+        .then(d => {
+            document.querySelector('.navbar').outerHTML = d;
+        })
+        .catch(err => console.error('Error:', err));
+</script>
